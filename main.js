@@ -43,7 +43,6 @@ function drawSurname() {
   const drawn = drawPool[index];
   randomized.push(drawn);
 
-  // Usuwanie wylosowanego nazwiska za pomocą filter
   drawPool = drawPool.filter(surname => surname !== drawn);
 
   updateDrawPoolList();

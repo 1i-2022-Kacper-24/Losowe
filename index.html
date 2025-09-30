@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Losowanie nazwisk</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Dodaj nazwisko</h2>
+    <input type="text" id="surnameInput" placeholder="Wpisz nazwisko">
+    <button onclick="addSurname()">Dodaj</button>
+
+    <h3>Lista nazwisk:</h3>
+    <ul id="surnameList"></ul>
+
+    <button onclick="copyList()">Utwórz kopię listy do losowania</button>
+    <button onclick="drawSurname()">Wylosuj nazwisko</button>
+
+    <h3>Aktualna lista do losowania:</h3>
+    <ul id="drawPoolList"></ul>
+
+    <h3>Wylosowane nazwiska:</h3>
+    <ul id="randomizedList"></ul>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
